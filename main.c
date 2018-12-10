@@ -6,7 +6,7 @@
 /*   By: axelgerv <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/12/06 16:24:31 by axelgerv          #+#    #+#             */
-/*   Updated: 2018/12/07 18:32:21 by axelgerv         ###   ########.fr       */
+/*   Updated: 2018/12/10 18:35:57 by axelgerv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,9 +40,15 @@ int     main(int c, char **v)
 			return (0);
 		line = NULL;
 		out = get_next_line(fd, &line);
-		printf("%s\n", line);
+		printf("Ca c'est line : %s\n", line);
+		line = NULL;
+		if (!(fd = open(v[2], O_RDONLY)))
+			return (0);
+		out = get_next_line(fd, &line);
+		printf("Ca c'est line : %s\n", line);
 		free(line);
 	}
 	close(fd);
 	return (0);
 }
+
