@@ -6,12 +6,11 @@
 /*   By: axelgerv <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/12/07 18:32:48 by axelgerv          #+#    #+#             */
-/*   Updated: 2018/12/14 16:38:45 by axelgerv         ###   ########.fr       */
+/*   Updated: 2018/12/14 17:24:29 by axelgerv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line.h"
-#include <stdio.h>
 
 static	void	del_list(t_data **element, int fd)
 {
